@@ -9,7 +9,7 @@
   border: 2px #000000 solid;
 }
 
-
+.product-modal__content,
 .menu_navigation,
 .menu-dropdown,
 .menu-dropdown--second-level,
@@ -29,9 +29,12 @@
   color: #feece6;
 }
 
-.button--secondary,
-.shopify-payment-button__button,
-.shopify-payment-button__button--unbranded {
+
+/*.shopify-payment-button__button,
+.shopify-payment-button__button--unbranded,*/
+
+.button--secondary {
+  background-color: none;
   border: 1px #000000 solid;
   color: #000000;
 }
@@ -39,11 +42,9 @@
 
 .customer__button:hover,
 .product-form__add-to-cart:hover,
-.shopify-payment-button__button:hover,
 .product-card__quickadd:hover,
 .shopify-challenge__button:hover,
-.shopify-payment-button__button:hover, 
-.shopify-payment-button__button--unbranded:hover,
+.shopify-payment-button:hover,
 .password-form__button:hover,
 .password-action-bar__button:hover,
 .template-404__link:hover,
@@ -55,7 +56,11 @@
 }
 
 .form__input, 
-.form__input:hover {
+.form__input:hover,
+/*.form-select-label, */
+.form__select-label, 
+.form__input-wrapper:hover,
+{
   border-bottom: 1px solid #000000;
 }
 
@@ -70,10 +75,10 @@
 }
 
 .cart__note-label {
-  font-size: 2rem;
-  line-height: 2.6rem;
+    font-size: 2rem;
+    line-height: 2.6rem;
 }
 
 .cart__note-wrapper {
-  padding: 3rem 0;
+    padding: 3rem 0;
 }
