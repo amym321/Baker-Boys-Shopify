@@ -5639,7 +5639,7 @@ tfoot th {
     color: #000000;
   }
   
-  
+  /*  buttons going black on hover */
   .customer__button:hover,
   .product-form__add-to-cart:hover,
   .product-card__quickadd:hover,
@@ -5655,30 +5655,50 @@ tfoot th {
     color: #feece6;
   }
   
+  /* underlining input fields */
   .form__input, 
-  .form__input:hover,
+  /*.form__input:hover,*/
   /*.form-select-label, */
   .form__select-label, 
-  .form__input-wrapper:hover,
+  .quantity-input
+  /*.form__input-wrapper:hover*/
   {
     border-bottom: 1px solid #000000;
   }
   
+  /* enlarge social icons */
   .footer-icons__social-item .icon {
       height: 3rem;
       width: 3rem;
   }
   
+  /* enlarge payment icons */
   .footer-icons__payment-item .icon {
       height: 3rem;
       width: 4.8rem;
   }
-  
+  .
+  /* enlarge text for title of special notes box */
   .cart__note-label {
       font-size: 2rem;
       line-height: 2.6rem;
   }
   
+  /* a little more space with the enlarged title text */
   .cart__note-wrapper {
       padding: 3rem 0;
+  }
+  
+  /* pink bar for header */
+  .header--secondary-background {
+      background-color: #F9D0D6;
+  }
+  
+  /* black text for + and - quantity icons and mobile menu bar icons */
+  .menu-icon__bar,
+  .menu-icon,
+  .quantity-input__button,
+  .quantity-input__element,
+  .icon-plus {
+      color: #000000;
   }
