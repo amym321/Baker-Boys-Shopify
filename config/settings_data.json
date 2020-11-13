@@ -30,9 +30,9 @@
           "enable_secondary_background": true,
           "show_search": true,
           "announcement_bar_enabled": true,
-          "announcement_bar_text": "Online Pick Up Orders Available!   ~   (847) 443-0430",
-          "announcement_bar_color_background": "#f9d0d6",
-          "announcement_bar_color_text": "#000000"
+          "announcement_bar_text": "ONLINE PICK UP ORDERS AVAILABLE!   ~  (847) 433-0430",
+          "announcement_bar_color_background": "#f5a2ae",
+          "announcement_bar_color_text": "#07288a"
         }
       },
       "image-with-text-0": {
@@ -189,7 +189,7 @@
         "type": "product-recommendations",
         "settings": {
           "heading": "You may also like",
-          "show_product_recommendations": false,
+          "show_product_recommendations": true,
           "quick_add": true
         }
       },
