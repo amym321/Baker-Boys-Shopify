@@ -3,23 +3,13 @@
 
 
 
-
 .featured-collections__tabpanel {
   background: #F9D0D6;
   border: 2px #000000 solid;
 }
 
-.product-modal__content,
-.menu_navigation,
-.menu-dropdown,
-.menu-dropdown--second-level,
-.shopify-payment-button__button,
-.product-card__quickadd {
-  background-color:  #feece6;
-  background:  #feece6;
-}
 
-
+/* cart is colored with border and not white */
 .cart__note,
 .search__form-input,
 .search__form-input--drawer {
@@ -77,11 +67,11 @@
     height: 3rem;
     width: 4.8rem;
 }
-.
+
 /* enlarge text for title of special notes box */
 .cart__note-label {
-    font-size: 2rem;
-    line-height: 2.6rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
 }
 
 /* a little more space with the enlarged title text */
@@ -92,13 +82,46 @@
 /* pink bar for header */
 .header--secondary-background {
     background-color: #F9D0D6;
+} 
+
+/* dropdown menu, product detail, checkout button, & burger menu dropdown can't be transparent */
+.product-modal__content,
+.menu_navigation,
+.menu-dropdown,
+.menu-dropdown--second-level,
+.mobile-menu-navigation,
+.shopify-payment-button__button,
+.product-card__quickadd {
+  background-color:  #feece6;
+  background:  #feece6;
 }
 
-/* black text for + and - quantity icons and mobile menu bar icons */
-.menu-icon__bar,
+/* black text for + and - quantity icons, mobile hamburger menu, and X close on product. 
+NOT WORKING on hamburger icon right away. shows after clicking once. 
+--color-body-text: from root provides the color on the demo */
+.icon-hamburger,
+/*.menu-icon__bar,
 .menu-icon,
+.icon-hamburger,
+.menu-icon,
+.header__icon,
+.header__icons,
+.header__icon--button,
+.header__icon--menu-navigation,
+*/
+
+.quantity-input,
+/*
 .quantity-input__button,
-.quantity-input__element,
-.icon-plus {
-    color: #000000;
+.icon--wide,
+.icon,
+.icon-plus,
+.icon-minus,
+*/
+.product-modal__close,
+.icon-close {
+  color:#000000;
+  fill: #000000;
+  opacity: 1;
+  stroke: #000000;
 }
