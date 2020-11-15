@@ -16,7 +16,7 @@
     "social_facebook_link": "https:\/\/www.facebook.com\/sharer.php?u=https%3A%2F%2Fbakerboysbakery.com%2F&t=Baker%20Boys%20Bakery",
     "favicon": "shopify:\/\/shop_images\/favicon2-removebg-preview_2.png",
     "checkout_header_image": "shopify:\/\/shop_images\/cupcakes_16_b-removebg-preview.png",
-    "checkout_logo_image": "shopify:\/\/shop_images\/Logo_18e.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/label_8.png",
     "checkout_logo_size": "medium",
     "checkout_body_background_color": "#fffbf6",
     "checkout_sidebar_background_color": "#fcdce1",
@@ -30,7 +30,7 @@
           "enable_secondary_background": true,
           "show_search": true,
           "announcement_bar_enabled": true,
-          "announcement_bar_text": "ONLINE PICK UP ORDERS AVAILABLE!   ~  (847) 433-0430",
+          "announcement_bar_text": "ONLINE PICK UP AVAILABLE!   ~  (847) 433-0430",
           "announcement_bar_color_background": "#f5a2ae",
           "announcement_bar_color_text": "#07288a"
         }
@@ -39,7 +39,7 @@
         "type": "image-with-text",
         "settings": {
           "image": "shopify:\/\/shop_images\/cupcake_25d.png",
-          "title": "Baker Boys - Live the sweet life",
+          "title": "BAKER BOYS  bringing you the sweet life",
           "text": "",
           "button_label": "",
           "desktop_layout": "right",
@@ -107,7 +107,7 @@
           "image": "shopify:\/\/shop_images\/wedding_1-removebg-preview.png",
           "title": "Wedding Cakes",
           "text": "<p><br\/>We take special care to create wedding cakes that are not only delicious, but visually delightful, too. We invite you to come into our stores to peruse our wedding cake album for ideas and possibilities. Our friendly store staff will help you through the process to ensure your cake is everything you adore, and more, just like your spouse-to-be.<\/p>",
-          "button_label": "Make an Appointment",
+          "button_label": "Learn More",
           "button_url": "shopify:\/\/pages\/wedding-cakes",
           "desktop_layout": "left",
           "mobile_layout": "bottom",
@@ -146,7 +146,7 @@
             "type": "text",
             "settings": {
               "title": "Hours of Operation",
-              "text": "<p>Wed. to Sat.  | 7:30am - 3pm<\/p><p>Sun.  | 7:30am - 3pm<\/p><p>Mon. &amp; Tue.  | Closed<\/p>"
+              "text": "<p>Tues. to Sat.  | 7:30am - 5:30pm    <br\/>Sun.  | 7:30am - 3:00pm              <br\/>Mon.  | Closed<\/p>"
             }
           },
           "footer-1": {
@@ -216,6 +216,37 @@
           "show_vendor": false,
           "enable_dynamic_checkout": false,
           "show_social_buttons": true
+        }
+      },
+      "password-header": {
+        "type": "password-header",
+        "settings": {
+          "logo_max_width": 100,
+          "header": "Coming Soon"
+        }
+      },
+      "password-content": {
+        "type": "password-content",
+        "settings": {
+          "newsletter_enable": true,
+          "newsletter_form_heading": "Be the first to know when we launch.",
+          "newsletter_form_subheading": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>",
+          "newsletter_placeholder": "Email address",
+          "newsletter_button_text": "Notify me"
+        }
+      },
+      "password-footer": {
+        "type": "password-footer",
+        "settings": {
+          "show_share_buttons": true,
+          "social_message": "Spread the word"
+        }
+      },
+      "blog": {
+        "type": "blog",
+        "settings": {
+          "show_author": true,
+          "show_date": true
         }
       }
     },
