@@ -3,6 +3,7 @@
 
 
 
+
 .featured-collections__tabpanel {
   background: #F9D0D6;
   border: 2px #000000 solid;
@@ -79,17 +80,28 @@
     padding: 3rem 0;
 }
 
-/* pink bar for header */
-.header--secondary-background {
+/* pink bar for header & gift card */
+.header--secondary-background,
+#shopify-section-1605155954cd1662c4 {
     background-color: #F9D0D6;
 } 
 
+/* beige background for wedding cake */
+/*#shopify-section-image-with-text-2 {
+    background-color:#FFFBF6
+}*/
+
+/* beige background for same day pickup */
+/*#shopify-section-image-with-text-3 {
+    background-color:#FFFBF6
+}*/
 
 
 /* black text for + and - quantity icons, mobile hamburger menu, and X close on product. 
 NOT WORKING on hamburger icon right away. shows after clicking once. 
 --color-body-text: from root provides the color on the demo */
-.icon-hamburger,
+.icon-hamburger::before,
+.icon-hamburger::after,
 /*.menu-icon__bar,
 .menu-icon,
 .icon-hamburger,
@@ -98,8 +110,23 @@ NOT WORKING on hamburger icon right away. shows after clicking once.
 .header__icons,
 .header__icon--button,
 .header__icon--menu-navigation,
+.menu-icon__bar::before,
+.menu-icon__bar::after,
+.menu-icon::before,
+.menu-icon::after,
+.header__icons::before,
+.header__icons::after,
+.header__icon--button::before,
+.header__icon--button::after,
+.header__icon--button,
+.header__icon::before,
+.header__icon::after,
+.header__icon--menu-navigation::before,
+.header__icon--menu-navigation::after,
+.header__icon--mobile-navigation-close:focus,
+.header__icon--mobile-navigation-close:hover,
+.header--secondary-background,
 */
-
 .quantity-input,
 /*
 .quantity-input__button,
@@ -114,7 +141,9 @@ NOT WORKING on hamburger icon right away. shows after clicking once.
   fill: #000000;
   opacity: 1;
   stroke: #000000;
+  z-index:2000;
 }
+
 
 /* dropdown menu, product detail, checkout button, & burger menu dropdown can't be transparent */
 .product-modal__content,
@@ -122,7 +151,6 @@ NOT WORKING on hamburger icon right away. shows after clicking once.
 .menu-dropdown,
 .menu-dropdown--second-level,
 .menu-dropdown__item--has-dropdown,
-.menu-dropdown--second-level,
 /*.menu_navigation,
 .header--secondary-background,
 .menu-navigation__item--has-dropdown,*/
@@ -133,10 +161,11 @@ NOT WORKING on hamburger icon right away. shows after clicking once.
   background:  #feece6;
 }
 
-/* gradient background for captcha challenge & gift card */
+
+/* gradient background for captcha challenge & gift card. Gift card not working. OK */
 /*.skip-link,
 .shopify-challenge__wrapper,
-.shopify-challenge__container, /* only colored a small square and nor sides*/
+.shopify-challenge__container, 
 .color_background,
 .critical-hidden,
 .color-background-rgba-stripped,
@@ -146,3 +175,4 @@ NOT WORKING on hamburger icon right away. shows after clicking once.
 .content-for-layout {
    	background: linear-gradient(to right, #FFFBF6, #fcdce1);
 }
+
