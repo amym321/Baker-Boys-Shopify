@@ -3,10 +3,46 @@
 
 
 
-
-.featured-collections__tabpanel {
-  background: #F9D0D6;
+/* featured collection menu is colored pink rather than transparent */
+/*.featured-collections__tabpanel {
+background: #F9D0D6;
   border: 2px #000000 solid;
+} */
+
+/* featured collection menu is bold. need both classes to be assigned bold */
+.featured-collections__item-title,
+.featured-collections__tabpanel {
+  font-weight: bold;
+  /*text-decoration: underline;*/
+}
+
+/* pink bar for header, gift card, & featured collection menu (on scroll) */
+.header--secondary-background,
+#shopify-section-1605155954cd1662c4,
+.featured-collections__header::after 
+{
+  background-color: #F9D0D6;
+}
+
+
+.featured-collections__product-count,
+.featured-collections__item-title,
+.featured-collections__item-title::before,
+.featured-collections__item-title::after,
+.featured-collections-tab__item {
+  color: #000000;
+  z-index: 26;
+}
+
+.scroller-content::before, 
+.scroller-parent::before,
+.featured-collections__tabpanel::before,
+.featured-collections__header::before,
+.featured-collections__tablist::before {
+  /*position: static;*/
+  /*opacity: 0;*/
+  background: none;
+  background-color: none;
 }
 
 
@@ -80,11 +116,6 @@
     padding: 3rem 0;
 }
 
-/* pink bar for header & gift card */
-.header--secondary-background,
-#shopify-section-1605155954cd1662c4 {
-    background-color: #F9D0D6;
-} 
 
 /* beige background for wedding cake */
 /*#shopify-section-image-with-text-2 {
@@ -162,7 +193,7 @@ NOT WORKING on hamburger icon right away. shows after clicking once.
 }
 
 
-/* gradient background for captcha challenge & gift card. Gift card not working. OK */
+/* gradient background for captcha challenge, featured colletion menu, & gift card. Gift card not working. OK */
 /*.skip-link,
 .shopify-challenge__wrapper,
 .shopify-challenge__container, 
@@ -172,7 +203,6 @@ NOT WORKING on hamburger icon right away. shows after clicking once.
 .shopify-editor-setting-color_background,
 .gift-card-image-wrapper,
 */
-.content-for-layout {
+.content-for-layout, {
    	background: linear-gradient(to right, #FFFBF6, #fcdce1);
 }
-
