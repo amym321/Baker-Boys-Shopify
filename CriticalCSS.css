@@ -818,3 +818,77 @@ textarea {
     vertical-align: middle;
     fill: currentColor;
 }
+
+
+/****  MY CODE  ****/
+/* black text for + and - quantity icons, product popup close button, mobile hamburger menu, 
+and X close on product. Added password-modal__close but don't know where its used
+NOT WORKING on hamburger or X icons right away. shows after clicking once. 
+--color-body-text: from root provides the color on the demo */
+.icon-hamburger,
+.icon-hamburger::before,
+.icon-hamburger::after,
+
+.icon-close:focus,
+.icon-close:hover,
+.icon-close,
+/*
+.menu-icon__bar,
+.menu-icon,
+.icon-hamburger,
+.menu-icon,
+.header__icon,
+.header__icon:focus,
+.header__icon:hover,
+.header__icons,
+.header__icon--button,
+.header__icon--menu-navigation,
+.menu-icon__bar::before,
+.menu-icon__bar::after,
+.menu-icon::before,
+.menu-icon::after,
+.header__icons::before,
+.header__icons::after,
+.header__icon--button::before,
+.header__icon--button::after,
+.header__icon--button,
+.header__icon::before,
+.header__icon::after,
+.header__icon--menu-navigation::before,
+.header__icon--menu-navigation::after,
+.header__icon--mobile-navigation-close:focus,
+.header__icon--mobile-navigation-close:hover,
+.header--secondary-background,
+.header__icon--menu-navigation:focus .menu-icon__bar,
+.header__icon--menu-navigation:hover .menu-icon__bar,
+.header__icon--mobile-navigation-close:focus,
+.header__icon--mobile-navigation-close:hover,*/
+.quantity-input,
+.product-modal__close,
+.password-modal__close
+/*
+.quantity-input__button,
+.icon--wide,
+.icon,
+.icon-plus,
+.icon-minus,
+.header__icon--button,
+.header__icon--menu-navigation:focus .menu-icon__bar,
+.header__icon--menu-navigation:hover .menu-icon__bar,
+.header__icon--mobile-navigation-close, 
+.header__icon--mobile-navigation-close:focus,
+.header__icon--mobile-navigation-close:hover, 
+.menu-icon__bar::after,
+.menu-icon__bar::before,
+.header__icon--mobile-navigation-close .menu-icon__bar::before,
+.header__icon--mobile-navigation-close .menu-icon__bar::after*/
+ {
+  color:#000000;
+  fill: #000000;
+  opacity: 1;
+  stroke: #000000;
+  z-index: 2000;
+}
+.icon {
+fill: #000000;
+}

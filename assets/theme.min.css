@@ -3,7 +3,7 @@
 
 
 
-/* featured collection menu is colored pink rather than transparent */
+/* featured collection menu is colored pink rather than transparent.  Not using. keep it transparent, then pink on scroll  */
 /*.featured-collections__tabpanel {
 background: #F9D0D6;
   border: 2px #000000 solid;
@@ -16,7 +16,8 @@ background: #F9D0D6;
   /*text-decoration: underline;*/
 }
 
-/* pink bar for header, gift card, & featured collection menu (on scroll) */
+/* pink bar for header, gift card section on home page, & featured collection menu (on scroll) */
+/* the number in the gift card id is specified in the settings_data.json. keeps sections seperate */
 .header--secondary-background,
 #shopify-section-1605155954cd1662c4,
 .featured-collections__header::after 
@@ -24,7 +25,7 @@ background: #F9D0D6;
   background-color: #F9D0D6;
 }
 
-
+/* featured collection menu titles showing up on top of pink menu bar */
 .featured-collections__product-count,
 .featured-collections__item-title,
 .featured-collections__item-title::before,
@@ -34,6 +35,7 @@ background: #F9D0D6;
   z-index: 26;
 }
 
+/* featured collection menu bar transparent until scroll down */
 .scroller-content::before, 
 .scroller-parent::before,
 .featured-collections__tabpanel::before,
@@ -59,7 +61,6 @@ background: #F9D0D6;
 
 /*.shopify-payment-button__button,
 .shopify-payment-button__button--unbranded,*/
-
 .button--secondary {
   background-color: none;
   border: 1px #000000 solid;
@@ -128,16 +129,26 @@ background: #F9D0D6;
 }*/
 
 
-/* black text for + and - quantity icons, mobile hamburger menu, and X close on product. 
-NOT WORKING on hamburger icon right away. shows after clicking once. 
+
+/* black text for + and - quantity icons, product popup close button, mobile hamburger menu, 
+and X close on product. Added password-modal__close but don't know where its used
+NOT WORKING on hamburger or X icons right away. shows after clicking once. 
 --color-body-text: from root provides the color on the demo */
+.icon-hamburger,
 .icon-hamburger::before,
 .icon-hamburger::after,
+
+.icon-close:focus,
+.icon-close:hover,
+.icon-close,
+
 /*.menu-icon__bar,
 .menu-icon,
 .icon-hamburger,
 .menu-icon,
 .header__icon,
+.header__icon:focus,
+.header__icon:hover,
 .header__icons,
 .header__icon--button,
 .header__icon--menu-navigation,
@@ -157,22 +168,39 @@ NOT WORKING on hamburger icon right away. shows after clicking once.
 .header__icon--mobile-navigation-close:focus,
 .header__icon--mobile-navigation-close:hover,
 .header--secondary-background,
+.header__icon--menu-navigation:focus .menu-icon__bar,
+.header__icon--menu-navigation:hover .menu-icon__bar,
+.header__icon--mobile-navigation-close:focus,
+.header__icon--mobile-navigation-close:hover,
 */
 .quantity-input,
+.product-modal__close,
+.password-modal__close
 /*
 .quantity-input__button,
 .icon--wide,
 .icon,
 .icon-plus,
 .icon-minus,
-*/
-.product-modal__close,
-.icon-close {
+.header__icon--button,
+.header__icon--menu-navigation:focus .menu-icon__bar,
+.header__icon--menu-navigation:hover .menu-icon__bar,
+.header__icon--mobile-navigation-close, 
+.header__icon--mobile-navigation-close:focus,
+.header__icon--mobile-navigation-close:hover, 
+.menu-icon__bar::after,
+.menu-icon__bar::before,
+.header__icon--mobile-navigation-close .menu-icon__bar::before,
+.header__icon--mobile-navigation-close .menu-icon__bar::after*/
+ {
   color:#000000;
   fill: #000000;
   opacity: 1;
   stroke: #000000;
-  z-index:2000;
+  z-index: 2000;
+}
+.icon {
+fill: #000000;
 }
 
 
@@ -206,3 +234,117 @@ NOT WORKING on hamburger icon right away. shows after clicking once.
 .content-for-layout, {
    	background: linear-gradient(to right, #FFFBF6, #fcdce1);
 }
+
+
+
+
+
+/* adds border to cart items */
+@media only screen and (min-width: 46.85em) {
+    .cart__table-cell,
+    .cart__table-heading {
+        border-bottom: 1px solid #bfbfbf;
+        padding: 2rem 2.5rem;
+    }
+}
+
+.cart__table-row + .cart__table-row {
+    border-top: 1px solid #adadad;
+}
+
+/* adds border between mobile nav list items */
+.header__mobile-navigation .menu-navigation__list-item {
+    border-top: 1px solid #adadad;
+}
+
+
+
+
+/**** more lines and borders. don't know where they all show up. ****/
+
+/* horizontal row somewhere. don't see it */
+hr {
+    margin: 5.5rem 0;
+    border: none;
+    border-bottom: 1px solid #adadad;
+}
+
+.cart__table-row + .cart__table-row {
+    border-top: 1px solid #adadad;
+}
+
+@media only screen and (min-width: 46.85em) {
+    .cart__table-cell,
+    .cart__table-heading {
+        border-bottom: 1px solid #adadad;
+    }
+}
+
+.table {
+    border-bottom: 1px solid #adadad;
+}
+@media only screen and (min-width: 46.85em) {
+    .table {
+        border-bottom: none;
+    }
+}
+.table a {
+    border-bottom: 1px solid #adadad;
+}
+
+@media only screen and (min-width: 46.85em) {
+    .table td,
+    .table th {
+        border: 1px solid #adadad;
+    }
+}
+
+.table__row {
+    border-top: 1px solid #adadad;
+}
+@media only screen and (min-width: 46.85em) {
+    .table__row {
+        border-top: none;
+    }
+}
+
+.featured-collections__item::after {
+    background-color: #adadad;
+}
+
+@media only screen and (min-width: 46.85em) {
+    .order-table thead {
+        border: 1px solid #adadad;
+        border-bottom-color: #adadad;
+    }
+}
+.order-table tbody {
+    border-top: 1px solid #adadad;
+}
+
+.order-table tbody tr:not(:first-child) {
+    border-top: 1px solid #adadad;
+}
+
+@media only screen and (min-width: 46.85em) {
+    .order-table tbody {
+        border: 1px solid #adadad;
+        border-bottom-color: #adadad;
+    }
+}
+.order-table tfoot tr:first-child,
+.order-table tfoot tr:last-child {
+    border-top: 1px solid #adadad;
+}
+
+@media only screen and (min-width: 46.85em) {
+    .order-table tfoot {
+        border: 1px solid #adadad;
+    }
+}
+
+.order-table__fulfillment-note {
+    border: 1px solid #adadad;
+}
+
+/**** end lines and borders ****/
