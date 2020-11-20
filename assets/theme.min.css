@@ -40,10 +40,11 @@
 }
 
 
-/* cart is colored with border and not white */
+/* cart note, form-input, and contact form message is colored with border and not white */
 .cart__note,
 .search__form-input,
-.search__form-input--drawer {
+.search__form-input--drawer,
+.form__textarea {
   background-color: #fffbf6;
   background: #fffbf6;
   border: 1px #000000 solid;

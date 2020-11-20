@@ -5601,23 +5601,32 @@ tfoot th {
 }
 
 
+
+
+
+
+
+
+
+
+.DONT-OVERWRITE__IT-HAS-NOTES-REMOVED-FROM-THEME.MIN.CSS
 /****** MY ADDED CODE ********/
 
-
+.DONT-OVERWRITE__IT-HAS-NOTES-REMOVED-FROM-THEME.MIN.CSS
 
 /* featured collection menu is colored pink rather than transparent.  Not using. keep it transparent, then pink on scroll  */
 /*.featured-collections__tabpanel {
 background: #F9D0D6;
   border: 2px #000000 solid;
 } */
-
+.DONT-OVERWRITE__IT-HAS-NOTES-REMOVED-FROM-THEME.MIN.CSS
 /* featured collection menu is bold. need both classes to be assigned bold */
 .featured-collections__item-title,
 .featured-collections__tabpanel {
   font-weight: bold;
   /*text-decoration: underline;*/
 }
-
+.DONT-OVERWRITE__IT-HAS-NOTES-REMOVED-FROM-THEME.MIN.CSS
 /* pink bar for header, gift card section on home page, & featured collection menu (on scroll) */
 /* the number in the gift card id is specified in the settings_data.json. keeps sections seperate */
 .header--secondary-background,
@@ -5626,7 +5635,7 @@ background: #F9D0D6;
 {
   background-color: #F9D0D6;
 }
-
+.DONT-OVERWRITE__IT-HAS-NOTES-REMOVED-FROM-THEME.MIN.CSS
 /* featured collection menu titles showing up on top of pink menu bar */
 .featured-collections__product-count,
 .featured-collections__item-title,
@@ -5650,10 +5659,11 @@ background: #F9D0D6;
 }
 
 
-/* cart is colored with border and not white */
+/* cart note, form-input, and contact form message is colored with border and not white */
 .cart__note,
 .search__form-input,
-.search__form-input--drawer {
+.search__form-input--drawer,
+.form__textarea {
   background-color: #fffbf6;
   background: #fffbf6;
   border: 1px #000000 solid;
