@@ -3,20 +3,14 @@
 
 
 
-/* featured collection menu is colored pink rather than transparent.  Not using. keep it transparent, then pink on scroll  */
-/*.featured-collections__tabpanel {
-background: #F9D0D6;
-  border: 2px #000000 solid;
-} */
 
 /* featured collection menu is bold. need both classes to be assigned bold */
 .featured-collections__item-title,
 .featured-collections__tabpanel {
   font-weight: bold;
-  /*text-decoration: underline;*/
 }
 
-/* pink bar for header, gift card section on home page, & featured collection menu (on scroll) */
+/* pink for header bar, gift card section on home page, & featured collection menu (on scroll) */
 /* the number in the gift card id is specified in the settings_data.json. keeps sections seperate */
 .header--secondary-background,
 #shopify-section-1605155954cd1662c4,
@@ -41,8 +35,6 @@ background: #F9D0D6;
 .featured-collections__tabpanel::before,
 .featured-collections__header::before,
 .featured-collections__tablist::before {
-  /*position: static;*/
-  /*opacity: 0;*/
   background: none;
   background-color: none;
 }
@@ -85,12 +77,8 @@ background: #F9D0D6;
 
 /* underlining input fields */
 .form__input, 
-/*.form__input:hover,*/
-/*.form-select-label, */
 .form__select-label, 
-.quantity-input
-/*.form__input-wrapper:hover*/
-{
+.quantity-input {
   border-bottom: 1px solid #000000;
 }
 
@@ -118,17 +106,6 @@ background: #F9D0D6;
 }
 
 
-/* beige background for wedding cake */
-/*#shopify-section-image-with-text-2 {
-    background-color:#FFFBF6
-}*/
-
-/* beige background for same day pickup */
-/*#shopify-section-image-with-text-3 {
-    background-color:#FFFBF6
-}*/
-
-
 
 /* black text for + and - quantity icons, product popup close button, mobile hamburger menu, 
 and X close on product. Added password-modal__close but don't know where its used
@@ -141,58 +118,9 @@ NOT WORKING on hamburger or X icons right away. shows after clicking once.
 .icon-close:focus,
 .icon-close:hover,
 .icon-close,
-
-/*.menu-icon__bar,
-.menu-icon,
-.icon-hamburger,
-.menu-icon,
-.header__icon,
-.header__icon:focus,
-.header__icon:hover,
-.header__icons,
-.header__icon--button,
-.header__icon--menu-navigation,
-.menu-icon__bar::before,
-.menu-icon__bar::after,
-.menu-icon::before,
-.menu-icon::after,
-.header__icons::before,
-.header__icons::after,
-.header__icon--button::before,
-.header__icon--button::after,
-.header__icon--button,
-.header__icon::before,
-.header__icon::after,
-.header__icon--menu-navigation::before,
-.header__icon--menu-navigation::after,
-.header__icon--mobile-navigation-close:focus,
-.header__icon--mobile-navigation-close:hover,
-.header--secondary-background,
-.header__icon--menu-navigation:focus .menu-icon__bar,
-.header__icon--menu-navigation:hover .menu-icon__bar,
-.header__icon--mobile-navigation-close:focus,
-.header__icon--mobile-navigation-close:hover,
-*/
 .quantity-input,
 .product-modal__close,
-.password-modal__close
-/*
-.quantity-input__button,
-.icon--wide,
-.icon,
-.icon-plus,
-.icon-minus,
-.header__icon--button,
-.header__icon--menu-navigation:focus .menu-icon__bar,
-.header__icon--menu-navigation:hover .menu-icon__bar,
-.header__icon--mobile-navigation-close, 
-.header__icon--mobile-navigation-close:focus,
-.header__icon--mobile-navigation-close:hover, 
-.menu-icon__bar::after,
-.menu-icon__bar::before,
-.header__icon--mobile-navigation-close .menu-icon__bar::before,
-.header__icon--mobile-navigation-close .menu-icon__bar::after*/
- {
+.password-modal__close {
   color:#000000;
   fill: #000000;
   opacity: 1;
@@ -204,15 +132,13 @@ fill: #000000;
 }
 
 
-/* dropdown menu, product detail, checkout button, & burger menu dropdown can't be transparent */
+
+/*  dropdown menu, product detail, checkout button, & burger menu dropdown cant be transparent */
 .product-modal__content,
 #MenuNavigation-bakery,
 .menu-dropdown,
 .menu-dropdown--second-level,
 .menu-dropdown__item--has-dropdown,
-/*.menu_navigation,
-.header--secondary-background,
-.menu-navigation__item--has-dropdown,*/
 .mobile-menu-navigation,
 .shopify-payment-button__button,
 .product-card__quickadd {
@@ -222,19 +148,9 @@ fill: #000000;
 
 
 /* gradient background for captcha challenge, featured colletion menu, & gift card. Gift card not working. OK */
-/*.skip-link,
-.shopify-challenge__wrapper,
-.shopify-challenge__container, 
-.color_background,
-.critical-hidden,
-.color-background-rgba-stripped,
-.shopify-editor-setting-color_background,
-.gift-card-image-wrapper,
-*/
 .content-for-layout, {
-   	background: linear-gradient(to right, #FFFBF6, #fcdce1);
+   	background-color: linear-gradient(to right, #FFFBF6, #fcdce1);
 }
-
 
 
 
@@ -258,11 +174,8 @@ fill: #000000;
 }
 
 
+/**** more lines and borders. Some are between products on featured list, some seprate line items on cart, etc  ****/
 
-
-/**** more lines and borders. don't know where they all show up. ****/
-
-/* horizontal row somewhere. don't see it */
 hr {
     margin: 5.5rem 0;
     border: none;
