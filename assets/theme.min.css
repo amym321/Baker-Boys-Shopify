@@ -85,8 +85,20 @@
 
 /* enlarge social icons */
 .footer-icons__social-item .icon {
-    height: 3rem;
-    width: 3rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+/* center social icons, payments, and copyright if used */
+.footer__bottom-content {
+    justify-content: center;   
+    text-align: center;  
+}
+
+/* spread out social icons */
+.footer-icons__social-item {
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 /* enlarge payment icons */
