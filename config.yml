@@ -1,8 +1,0 @@
-development:
-  password: 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
-  theme_id: "115182403745"
-  store: baker-boys-sweets.myshopify.com
-  ignore_files:
-  - "*.gif"
-  - "*.jpg"
-  - "*.me"
